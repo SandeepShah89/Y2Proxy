@@ -1,0 +1,100 @@
+
+//Function to detect  mobile device & redirect
+  function detectMobile()
+  {      
+      var isMobile,pageView,pageURL,callingPage      
+      var deviceScreenSize = 7;
+      var iScreenHeight, iScreenWidth
+      pageURL=getCookie("pageURL");
+      callingPage=getCookie("callingPage");
+     
+      /*iScreenWidth = getWidth();
+      iScreenHeight = getHeight();
+      
+      var screenSize =(Math.sqrt((iScreenWidth * iScreenWidth)+ (iScreenHeight * iScreenHeight) ))/96;
+      screenSize= Math.round(screenSize*10)/10;       //get the screen size of device in inches
+           
+      if (screenSize > deviceScreenSize)                  		 
+      {                                               //screen size is more than 7 inches, its not a mobile device             
+        isMobile="false";      
+      }                        
+      else                        
+      {                         
+        isMobile="true";                               //screen size is less than 7 inches, its a supported mobile device          
+      } */   
+      isMobile = MobileEsp.DetectTierIphone();           
+     
+// ***********************END*****************************************************************************************
+      
+      setCookie("isMobileCookie", isMobile, 30);               
+      document.location.reload(true);           //page is reloaded so that cookie value is check again at server side & redirect accordingly
+    }
+    
+    //Function to get width of the mobile device
+    //Different mobile platforms have different ways of finding widths
+    function getWidth()
+    {
+        xWidth = null;
+        if(window.screen != null)
+          xWidth = window.screen.availWidth;
+
+        if(window.innerWidth != null)
+          xWidth = window.innerWidth;
+
+        if(document.body != null)
+          xWidth = document.body.clientWidth;
+
+        return xWidth;
+    }
+    
+    //Function to get height of the mobile device
+    //Different mobile platforms have different ways of finding height
+    function getHeight() 
+    {
+        xHeight = null;
+        if(window.screen != null)
+          xHeight = window.screen.availHeight;
+
+        if(window.innerHeight != null)
+          xHeight = window.innerHeight;
+
+        if(document.body != null)
+          xHeight = document.body.clientHeight;
+
+        return xHeight;
+    }
+
+// Function to set the cookie value      
+    function setCookie(name,value,expirydays)                  
+    {     
+      var exdate=new Date();
+      exdate.setDate(exdate.getDate() + expirydays);        
+      document.cookie=name + "=" + value+"; expires="+exdate.toUTCString()+";path=/";  
+    } 
+    
+// Function to read the cookie value    
+    function getCookie(name)                                        
+    {
+      var value = document.cookie;
+      var cookieStart = value.indexOf(" " + name + "=");
+      if (cookieStart === -1)
+      {
+        cookieStart = value.indexOf(name + "=");
+      }
+      if (cookieStart === -1)
+      {
+        value = null;
+      }
+      else
+      {
+        cookieStart = value.indexOf("=", cookieStart) + 1;
+        var end = value.indexOf(";", cookieStart);
+        if (end === -1)
+        {
+          end = value.length;
+        }
+        value = unescape(value.substring(cookieStart,end));
+      }
+      return value;
+    }	 
+      

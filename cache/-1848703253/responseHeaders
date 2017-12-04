@@ -1,0 +1,10 @@
+Accept-Ranges:bytes;
+X-Cache:HIT;
+Server:ECS (lcy/1D39);
+Etag:"144534940";
+Cache-Control:max-age=1800;
+Last-Modified:Thu, 14 Apr 2016 16:59:33 GMT;
+Expires:Thu, 24 Nov 2016 15:21:27 GMT;
+Content-Length:2;
+Date:Thu, 24 Nov 2016 14:51:27 GMT;
+Content-Type:text/javascript;

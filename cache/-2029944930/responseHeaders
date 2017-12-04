@@ -1,0 +1,13 @@
+Transfer-Encoding:chunked;
+Alt-Svc:quic=":443"; ma=2592000; v="36,35,34";
+Server:sffe;
+X-Content-Type-Options:nosniff;
+Last-Modified:Thu, 24 Nov 2016 00:51:25 GMT;
+Date:Thu, 24 Nov 2016 06:11:48 GMT;
+Accept-Ranges:none;
+Cache-Control:public, max-age=31536000;
+Vary:Accept-Encoding;
+Expires:Fri, 24 Nov 2017 06:11:48 GMT;
+X-XSS-Protection:1; mode=block;
+Age:12148;
+Content-Type:text/javascript; charset=UTF-8;

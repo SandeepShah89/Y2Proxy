@@ -1,0 +1,15 @@
+X-Cache:HIT;
+Server:nginx;
+Connection:keep-alive;
+Last-Modified:Thu, 24 Nov 2016 04:19:18 GMT;
+Date:Thu, 24 Nov 2016 09:36:16 GMT;
+Via:1.1 varnish;
+Accept-Ranges:bytes;
+Cache-Control:max-age=7200;
+ETag:"58366a46-7c89";
+X-Served-By:cache-lcy1150-LCY;
+Content-Encoding:gzip;
+Vary:Accept-Encoding;
+Content-Length:12426;
+X-Cache-Hits:252774;
+Content-Type:application/x-javascript;

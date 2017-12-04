@@ -1,0 +1,15 @@
+_satellite.pushAsyncScript(function(event, target, $variables){
+  var trackExitLink = function() {
+    s.events = '';
+    s.linkTrackEvents = '';
+    s.linkTrackVars = _satellite.getVar('TMG linkTrackVars');
+    s.tl(this, 'e', this.href);
+
+};
+var links = document.links;
+for (var i = 0; i < links.length; i++) {
+    if (links[i].hostname.length && links[i].hostname.indexOf('telegraph') == -1) {
+        links[i].addEventListener('click', trackExitLink);
+    }
+}
+});

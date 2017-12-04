@@ -1,0 +1,82 @@
+/*
+	this script adjusts the font-size of the document in 10% increments.
+	it checks for the sizing-widget id and then attaches click events 
+	it also sets a cookie to rember the font size for 1 year form the last visit
+
+*/
+
+/*
+	if javascript is turned off the links goto larger.html and smaller.html
+	these pages should explain about what the widget is for and how to adjust 
+	the font-size in the browser...
+*/
+
+function fontSizer()
+{
+	if (!document.getElementById) return false;
+	
+	if(document.getElementById('sizing-widget'))  {
+		var increase=document.getElementById('larger');
+		var decrease=document.getElementById('smaller');
+		var myDate= new Date();
+		expires=myDate.getFullYear()+1
+		myDate.setFullYear(expires);
+		expires='; expires='+myDate.toGMTString();
+		
+		increase.onclick= function() {
+			//get the calculated font-size
+			if (document.getElementsByTagName('body')[0].style.fontSize)  {
+				var currentSize=document.getElementsByTagName('body')[0].style.fontSize;
+				
+				currentSize=currentSize.match(/([0-9]+)/);
+				currentSize=(Number(currentSize[0])+10)+'%';
+
+			}else{//no calculated font size so we are just starting
+				var currentSize='110%';
+			}
+			
+			document.getElementsByTagName('body')[0].style.fontSize=currentSize;
+			document.cookie="fontSize="+currentSize+expires;
+			return false;
+		}
+		
+		decrease.onclick= function() {
+			//get the calculated font-size
+			if (document.getElementsByTagName('body')[0].style.fontSize)  {
+				var currentSize=document.getElementsByTagName('body')[0].style.fontSize;
+				currentSize=currentSize.match(/([0-9]+)/);
+				currentSize=(Number(currentSize[0])-10);
+				if (currentSize<60) currentSize=60;
+				currentSize=currentSize+'%';
+			}else{//no calculated font size so we are just starting
+				var currentSize='90%';
+			}
+			document.getElementsByTagName('body')[0].style.fontSize=currentSize;
+			document.cookie="fontSize="+currentSize+expires;
+			return false;
+			
+
+		}
+		
+	
+	}
+}
+
+/*
+	Get the cookie and set the adjusted font-size
+*/
+
+function setFontSize ()  {
+	var cookies=document.cookie;
+	var cookieList=cookies.split(';');
+	var fontSize='';
+
+	for ( var i=0; i<cookieList.length; i++)  {
+		if (cookieList[i].match('fontSize')) fontSize=cookieList[i];
+	}
+		if (fontSize)  {	
+			fontSize=fontSize.match((/([0-9]+\%)/))[0];
+			document.getElementsByTagName('body')[0].style.fontSize=fontSize;
+		}
+		
+}

@@ -1,0 +1,15 @@
+X-Cache:HIT;
+Server:Skimlinks V9.0;
+Connection:keep-alive;
+P3P:policyref="https://s.skimresources.com/w3c/p3p.xml", CP="NOI DSP COR CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT";
+Date:Thu, 24 Nov 2016 13:37:13 GMT;
+Accept-Ranges:bytes;
+Cache-Control:public, max-age=3600;
+ETag:"797d261ef873f32c68234fd50cd800e8";
+X-Served-By:cache-lcy1124-LCY;
+Content-Encoding:gzip;
+Set-Cookie:skimSESS=ec63fe3a14d457fe5e67cc3e19c06045; Domain=.skimresources.com; expires=Thu, 24 Nov 2016 14:07:13 GMT; path=/;;skimGUID=a6a5049e064561a89741426173036841; Domain=.skimresources.com; expires=Tue, 23 Nov 2021 13:37:13 GMT; path=/;;
+Vary:Accept-Encoding;
+Content-Length:29756;
+X-Cache-Hits:94910;
+Content-Type:application/javascript;

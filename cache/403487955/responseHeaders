@@ -1,0 +1,10 @@
+X-Frame-Options:SAMEORIGIN;
+Cache-Control:public, max-age=31529104;
+Server:nginx;
+ETag:W/"1468e42-307a-5420a801ac93f";
+Connection:close;
+Vary:Accept-Encoding;
+Last-Modified:Thu, 24 Nov 2016 11:42:29 GMT;
+Content-Length:12410;
+Date:Thu, 24 Nov 2016 13:37:13 GMT;
+Content-Type:image/jpeg;

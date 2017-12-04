@@ -1,0 +1,14 @@
+Keep-Alive:timeout=5, max=100;
+Server:Apache-Coyote/1.1;
+Connection:Keep-Alive;
+Last-Modified:Mon, 25 Jan 2016 20:03:00 GMT;
+p3p:CP="NOI DSP COR NID ADM DEV PSA OUR IND UNI PUR COM NAV INT STA";
+Cteonnt-Length:36063;
+Date:Thu, 24 Nov 2016 14:51:26 GMT;
+Via:1.1 ots.optimize.webtrends.com;
+Accept-Ranges:bytes;
+Cache-Control:private;
+ETag:W/"36063-1453752180000";
+Content-Encoding:deflate;
+Content-Length:9551;
+Content-Type:text/javascript;

@@ -1,0 +1,11 @@
+Accept-Ranges:bytes;
+Server:AmazonS3;
+Cache-Control:max-age=3600;
+ETag:"afb83f07ebe17d784e194492ec01f661";
+Content-Encoding:gzip;
+Last-Modified:Fri, 18 Nov 2016 14:52:16 GMT;
+x-amz-request-id:5EFD02A45F3D1F11;
+Content-Length:37449;
+x-amz-id-2:raC7l7hLWZxYq3io+odLAjgyOnxpln2r7b9WpTM0fkIDskAB2bejaY1uuZJZ0canCh3GF1XkIL0=;
+Date:Thu, 24 Nov 2016 13:37:12 GMT;
+Content-Type:application/javascript;

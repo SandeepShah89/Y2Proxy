@@ -1,0 +1,6 @@
+Server:Skimlinks Pixel 1.0;
+Connection:keep-alive;
+Content-Length:43;
+P3p:policyref="http://skimlinks.com/w3c/p3p.xml", CP="NOI DSP COR CURa ADMa DEVa TAIa OUR BUS IND UNI COM NAV INT";
+Date:Thu, 24 Nov 2016 13:37:14 GMT;
+Content-Type:image/gif;

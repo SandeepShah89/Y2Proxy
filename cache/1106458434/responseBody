@@ -1,0 +1,148 @@
+
+    function loadPage()
+    
+				{
+				 $("div#previous").addClass("buttonDisable");
+				 $("img#Prev_Step").addClass("buttonDisable");
+				 $('#Pagination_nav').children('div').children('a#'+1).addClass("navColor");
+				 
+							$('#Pagination_nav').children('div').children('a#1').children('span').addClass("buttonSerialColor");
+							
+              var h= $(".showHide").attr("style");
+                  $(".showHide").each(function(){
+				
+                 
+                if($(this).attr("id")=="1")
+                    {
+                      $(this).attr("style","display:display;");          
+                    }
+                });
+                
+             }
+        function NextStep() 
+          { 
+          
+       $("div#previous").removeClass("buttonDisable");
+       $("img#Prev_Step").removeClass("buttonDisable");
+           $(".showHide").each(function(){
+           
+            if($(this).attr("style")=="display:display;" || $(this).attr("style")==null || $(this).attr("style")=="")
+            {
+               
+           if (!(isNaN($(this).next().attr("id")) || $(this).next().attr("id")==null || $(this).next().attr("id")=="")==true) {
+       $('#Pagination_nav').children('div').each(function(){
+            $(this).children().removeClass("navColor");
+            $(this).children().children('span').removeClass("buttonSerialColor");
+           });
+          
+            $('#Pagination_nav').children('div').children('a#'+$(this).next().attr("id")).addClass("navColor");
+            $('#Pagination_nav').children('div').children('a#'+$(this).next().attr("id")).children('span').addClass("buttonSerialColor");
+       
+              } 
+              if(!(isNaN($(this).next().attr("id")) || $(this).next().attr("id")==null || $(this).next().attr("id")=="")){
+              $("#Pagination_nav").children('#'+$(this).attr("id")).attr("style","font-weight:regular;");
+              $(this).attr("style","display:none");
+              
+              $(this).next().attr("style","display:display;");
+              var num=parseInt($(this).attr("id"))+1;
+              
+              $("#Pagination_nav").children('#'+num).attr("style","font-weight:bold;");
+			 
+              if ((isNaN($(this).next().next().attr("id")) || $(this).next().next().attr("id")==null || $(this).next().next().attr("id")=="")==true) 
+              {
+    		
+              $("div.sidebyside").children("div#next").addClass("buttonDisable");
+              $("img#Next_Step").addClass("buttonDisable");
+             
+              }
+                            return false;
+            }
+            
+          
+            }
+            else return;
+           });
+        }
+        
+         function previous() 
+          { 
+          
+          $("div.sidebyside").children("div#next").removeClass("buttonDisable");
+          $("img#Next_Step").removeClass("buttonDisable");
+           $(".showHide").each(function(){
+           
+            if($(this).attr("style")=="display:display;" || $(this).attr("style")==null || $(this).attr("style")=="")
+            { 
+            
+           if($(this).attr("id")>1){
+       $('#Pagination_nav').children('div').each(function(){
+            $(this).children().removeClass("navColor");
+            $(this).children().children('span').removeClass("buttonSerialColor");
+           });
+          }
+            $('#Pagination_nav').children('div').children('a#'+$(this).prev().attr("id")).addClass("navColor");
+            $('#Pagination_nav').children('div').children('a#'+$(this).prev().attr("id")).children('span').addClass("buttonSerialColor");
+       
+              if($(this).attr("id")>1){
+              $(this).attr("style","display:none");
+              $(this).prev().attr("style","display:display;");
+              if ((isNaN($(this).prev().prev().attr("id")) || $(this).prev().prev().attr("id")==null || $(this).prev().prev().attr("id")=="")) {
+                            
+              $("div#previous").addClass("buttonDisable");
+              $("img#Prev_Step").addClass("buttonDisable");
+              }
+              return false;
+              }
+              else return;
+            }
+           });
+        }
+        
+         function Navigation(i) 
+          {
+           $("div#previous").removeClass("buttonDisable");
+           $("img#Prev_Step").removeClass("buttonDisable");
+          $("div.sidebyside").children("div#next").removeClass("buttonDisable");
+           $("img#Next_Step").removeClass("buttonDisable"); 
+           $('#Pagination_nav').children('div').each(function(){
+            $(this).children().removeClass("navColor");
+            $(this).children().children('span').removeClass("buttonSerialColor");
+           });
+          $('#Pagination_nav').children('div').children('a#'+i).addClass("navColor");
+          $('#Pagination_nav').children('div').children('a#'+i).children('span').addClass("buttonSerialColor");
+         $(".showHide").each(function(){                       
+              if($(this).attr("style")=="display:display;" || $(this).attr("style")==null || $(this).attr("style")=="")
+    
+              {
+             $(this).attr("style","display:none");             
+              }           
+              
+            });
+          
+        $('#'+i).attr("style","display:display;");
+        
+        
+             if ((isNaN($('#'+i).prev().attr("id")) || $('#'+i).prev().attr("id")==null || $('#'+i).prev().attr("id")=="")) {
+                            
+              $("div#previous").addClass("buttonDisable");
+              $("img#Prev_Step").addClass("buttonDisable");
+              }
+              
+                if ((isNaN($('#'+i).next().attr("id")) || $('#'+i).next().attr("id")==null || $('#'+i).next().attr("id")=="")) {
+              
+              $("div.sidebyside").children("div#next").addClass("buttonDisable");
+              $("img#Next_Step").addClass("buttonDisable");
+      }
+    
+        }  
+      
+		
+		
+  function overlay() {
+	el = document.getElementById("overlay");
+    
+	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+	e2 = document.getElementById("overlayBox");
+	e2.style.display = (e2.style.display == "block") ? "none" : "block";   
+  }
+		

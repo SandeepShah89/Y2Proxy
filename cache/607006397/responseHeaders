@@ -1,0 +1,9 @@
+Transfer-Encoding:chunked;
+Cache-Control:max-age=1800;
+Server:Apache;
+ETag:"11bf7275b7071b68af418ce8ac3c10d2:1479819174";
+Connection:Transfer-Encoding;close;
+Vary:Accept-Encoding;
+Last-Modified:Tue, 22 Nov 2016 12:52:54 GMT;
+Date:Thu, 24 Nov 2016 09:36:14 GMT;
+Content-Type:application/x-javascript;

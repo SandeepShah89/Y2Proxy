@@ -1,0 +1,13 @@
+X-Cache:Hit from cloudfront;
+Server:AmazonS3;
+Connection:keep-alive;
+Last-Modified:Wed, 23 Nov 2016 15:02:11 GMT;
+Date:Wed, 23 Nov 2016 15:09:12 GMT;
+Via:1.1 ebc9acf67c6dc1a3a63cf0e997cc1068.cloudfront.net (CloudFront);
+Accept-Ranges:bytes;
+ETag:"e12c07f83a203e8691bbc51f80209df7";
+Content-Encoding:gzip;
+X-Amz-Cf-Id:8tB6tMQ9J7AWraoDcu1_mAO8b5i-9y0lO0C8Xb3dCWi9tO9NXbCYcA==;
+Content-Length:109196;
+Age:80880;
+Content-Type:application/x-javascript;

@@ -1,0 +1,291 @@
+$(document).ready(function() {
+
+	/* Initialise the footer
+	----------------------------------------------*/
+	initialiseFooter();
+
+
+/* --------------------------------------------
+	- ACCORDIAN INITIALISE
+	----------------------------------------------*/	
+	
+	var controlIndex=new Array();
+	var contentIndex=new Array();
+	
+	/* Initialise all Collapseable elements
+	----------------------------------------------*/
+	$('.collapseContent').hide();
+	$('.collapseControl').addClass("accordianClosed");
+	$('.collapseControlOpen').addClass("accordianOpen");
+	
+	/* Loop through each "control" block and push index to an array
+	----------------------------------------------*/	
+	$(".collapseControl,.collapseControlOpen").each(function (i) {
+		controlIndex.push($("*").index(this))	
+	});
+
+	/* Loop through each "content" block and push index to an array
+	---------------------------------------------------------------*/		
+	$(".collapseContent, .collapseContentOpen").each(function (i) {
+		contentIndex.push($("*").index(this))		
+	});
+	
+	/* ADD Class "collapseContentIDx" to elements
+	----------------------------------------------*/	
+	$(".collapseContent, .collapseContentOpen").each(function (i) {
+		
+		//Loop through the array of "header" indexes
+		for(x=0; x<=controlIndex.length; x++)
+		{
+			//If we are at the last position in the array
+			if(x == controlIndex.length - 1)
+			{
+				if($("*").index(this) > controlIndex[x] )
+				{
+					if($(this).get(0).tagName == "LI")
+					{
+						$(this).removeClass("collapseContent");
+						$(this).show();
+						$(this).parent().addClass("collapseContentID" + x);
+						$(this).parent().hide();
+						
+					}
+					else
+					{
+						$(this).addClass("collapseContentID" + x);
+					}
+				}//End IF Statement
+			}
+			else{
+				//determine where in the array we are
+				if($("*").index(this) > controlIndex[x] && $("*").index(this) < controlIndex[x+1])
+				{
+					if($(this).get(0).tagName == "LI")
+					{
+						$(this).removeClass("collapseContent");
+						$(this).show();
+						$(this).parent().addClass("collapseContentID" + x);
+						$(this).parent().hide();
+					}
+					else
+					{
+						$(this).addClass("collapseContentID" + x);
+					}
+					
+				}//End IF Statement
+			}//END IF Statement		
+		}//END For Loop
+
+	});
+	
+	/* Wrap the elements in an Outer DIV
+	----------------------------------------------*/	
+	$(".collapseControl, .collapseControlOpen").each(function (i) {
+		
+		$(this).before("<div class='accordianWrapper' id='accordianWrapper"+i+"'></div>")
+		$(this).appendTo("#accordianWrapper" + i);
+		$(".collapseContentID" + i).appendTo("#accordianWrapper" + i);
+			
+	});
+	
+	$(".collapseContentOpen").parent().css("background-color","#000");
+
+	/* Loop through any Open content blocks
+	----------------------------------------------*/	
+	$(".collapseContentOpen").each(function (i) {
+		if($(this).parent().get(0).tagName == "UL")
+		{
+			$(this).parent().show();
+		}//END IF STATEMENT
+	});
+
+	/* --------------------------------------------
+	- ACCORDIAN EVENTS
+	----------------------------------------------*/
+	
+	/* Hide/Show Elements
+	----------------------------------------------*/	
+	$('.collapseControl, .collapseControlOpen').click(function(){
+	
+		var indexOfThis = $(".collapseControl, .collapseControlOpen").index(this);
+		
+		
+		if($(".collapseContentID" + indexOfThis).is(":visible")) {
+			//...hide it
+			$(".collapseContentID" + indexOfThis).hide("fast");
+			$(this).removeClass("accordianOpen");
+			$(this).addClass("accordianClosed");
+			$(this).parent().css("background-color","#002776");
+		}
+		else {
+			//...show it
+			$(".collapseContentID" + indexOfThis).show("fast");
+			$(this).removeClass("accordianClosed");
+			$(this).addClass("accordianOpen");
+			$(this).parent().css("background-color","#FFFFFF");
+		}		
+	  return false;
+	});//END onClick of ".collapseControl"
+	
+	/* --------------------------------------------
+   expand/collapse accordian through keyboard
+	----------------------------------------------*/
+	
+  // Get the Header Text of the Accordian Panel	  
+  $(".collapseControl, .collapseControlOpen").each(function () {
+    var oHeaderText= $(this).html(); 
+    //if found	 
+    if(oHeaderText.length>0) {
+	   //add an anchor tag around it
+	   $(this).html("<a href='#'>" + oHeaderText + "</a>");      
+    } 
+  }); //End of Expand/collapse accordian through keyboard
+  
+ });
+ 
+/*
+# initialiseFooter()
+# =============================
+*/
+function initialiseFooter()
+{
+	
+	/* Determine whether to hide or show the footer on page load.
+	-------------------------------------------------------------*/
+		
+		ftGlobalStatus = $("#globalFooterStatus").val();
+
+		footerCookie = getCookie('BoSFooter');
+
+		/*If Footer cookie exists then set status from that
+		---------------------------------------------------*/
+		if (footerCookie!=null && footerCookie!="")
+		{
+			
+			if (footerCookie == "footerState=closed"){
+				$("#footer_link_panel_container").hide();
+				$("#explore").addClass("expand");
+				$("#explore").removeClass("collapse");
+				$('#footerlinks').css( "background-color", "#ffffff" );
+				//$('#footerlinks').css( "margin", "0 10px" ); 
+			}
+			else{
+				$("#footer_link_panel_container").show();
+				$("#explore").addClass("collapse");
+				$("#explore").removeClass("expand");				
+				$('#footerlinks').css( "background-color", "#eff1f5" ); 
+				$('#footerlinks').css( "margin", "0 20px 20px 20px" ); 
+			}//END IF STATEMENT
+		}//END IF STATEMENT
+
+		/* Set status from global setting
+		---------------------------------------------------*/	
+		else
+		{
+			if(ftGlobalStatus == "open"){
+				$("#footer_link_panel_container").show();
+				$("#explore").addClass("collapse");
+				$("#explore").removeClass("expand");					
+				$('#footerlinks').css( "background-color", "#eff1f5" );
+				$('#footerlinks').css( "margin", "0 20px 20px 20px" ); 
+			}
+			else{
+				$("#footer_link_panel_container").hide();
+				$("#explore").addClass("expand");
+				$("#explore").removeClass("collapse");				
+				$('#footerlinks').css( "background-color", "#ffffff" ); 
+				//$('#footerlinks').css( "margin", "0 10px" ); 
+				
+			}//END IF STATEMENT
+		}//END IF STATEMENT
+	
+ 
+	/* On Click of +/-
+	----------------------------------------*/
+	$('#exploreheader').click(function() {
+		if ($("#explore").attr('class') == "expand") {
+            $("#explore").removeClass('expand').addClass('collapse');
+            $("#footer_link_panel_container").slideToggle("fast");
+			$('#footerlinks').css( "background-color", "#eff1f5" ); 
+			$('#footerlinks').css( "margin", "0 20px 20px 20px" ); 
+			setFooterCookie("BoSFooter","open","90");			
+        }
+        else {
+            $("#footer_link_panel_container").slideToggle("fast", function() {
+                $(this).animate({ opacity: 1.0 }, 50, function() {
+                    $("#explore").removeClass('collapse').addClass('expand');
+					$('#footerlinks').css( "background-color", "#ffffff" ); 
+					//$('#footerlinks').css( "margin", "0 10px" ); 
+                });
+            });
+			setFooterCookie("BoSFooter","closed","90");			
+        }	
+         return false;
+	});
+    
+    
+    /* On keyboard access
+ ----------------------------------------*/
+  	if($("#exploreheader").html())// if condition 
+	{
+    var oFooterText= $("#exploreheader").html(); 
+    //if found	 
+    if(oFooterText.length>0){
+  	 //add an anchor tag around it
+  	 $("#exploreheader").html("<a href='#'>" + oFooterText + "</a>");      
+    } 
+  }
+   
+}
+
+/*----------------------------------------
+- FUNCTION: getCookie
+------------------------------------------*/
+function getCookie(c_name)
+{
+	
+	if (document.cookie.length > 0)
+	{
+		c_start=document.cookie.indexOf(c_name + "=");
+		
+		//alert(document.cookie)
+		
+		if (c_start!=-1)
+		{
+			c_start = c_start + c_name.length+1;
+			//alert("c_start: " + c_start);
+			c_end = document.cookie.indexOf(";",c_start);
+			//alert("c_end: " + c_end);
+			if (c_end==-1)
+			{
+				c_end=document.cookie.length;
+			}//END IF STATEMENT
+			
+			return unescape(document.cookie.substring(c_start,c_end));
+		
+		}//END IF STATEMENT
+		
+	}//END IF STATEMENT
+	
+	return "";
+}//END FUNCTION
+
+
+/*----------------------------------------
+- FUNCTION: setFooterCookie
+-	Sets the value of the cookie everytime a user expands or collapses the footer.
+-
+- 	c_name: 	Cookie Name	"BoSFooter"
+- 	status: 	Status	 	"open/closed"
+- 	expiredays: 	Expiry		90 days
+------------------------------------------*/
+function setFooterCookie(c_name,status,expiredays)
+{
+	//Calculate new date
+	var exdate = new Date();
+	exdate.setDate(exdate.getDate()+expiredays);
+
+	//Set Cookie	
+	document.cookie = "BoSFooter=footerState=" + status + ((expiredays==null) ? "" : ";path=/;expires="+exdate.toUTCString());
+	
+}//END FUNCTION

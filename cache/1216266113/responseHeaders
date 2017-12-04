@@ -1,0 +1,14 @@
+Server:Apache;
+X-LB-NoCache:true;
+Connection:keep-alive;
+X-PAL-Host:pal056.back.live.cwwtf.local:80;
+Date:Thu, 24 Nov 2016 14:50:52 GMT;
+X-Cache-Action:HIT;
+Etag:"00d114e7872e370442e4d745f79b9e2a";
+Cache-Control:max-age=600;
+X-Cache-Age:217;
+Vary:X-CDN;
+Expires:Thu, 24 Nov 2016 15:17:15 GMT;
+Content-Length:30;
+X-Cache-Hits:18997;
+Content-Type:text/javascript;

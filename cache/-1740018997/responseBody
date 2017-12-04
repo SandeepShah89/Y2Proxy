@@ -1,0 +1,2 @@
+/*! Grunt minif */
+try{$(document).ready(function(){loadDependantScript("/assets/js/libs/jquery.smartbanner.js",function(){$.smartbanner({title:"Lloyds Bank",author:"Mobile Banking App",appStoreLanguage:"gb",icon:"/assets/img/lloyds-personal-app-logo.png",daysHidden:0,daysReminder:0})})})}catch(e){}

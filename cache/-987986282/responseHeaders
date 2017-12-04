@@ -1,0 +1,12 @@
+Transfer-Encoding:chunked;
+Server:Server;
+Connection:keep-alive;
+x-sdch-encode:0;
+p3p:policyref="https://www.amazon.co.uk/w3c/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC ";
+Date:Thu, 24 Nov 2016 09:29:29 GMT;
+X-Frame-Options:SAMEORIGIN;
+Strict-Transport-Security:max-age=47474747; includeSubDomains; preload;
+Vary:Accept-Encoding,User-Agent,Avail-Dictionary;
+x-amz-id-1:W35DF3F1GNRJ6JSS3TG7;
+Set-cookie:session-id=251-6854032-3587657; path=/; domain=.amazon.co.uk; expires=Tue, 01-Jan-2036 00:00:01 GMT;session-id-time=2082758401l; path=/; domain=.amazon.co.uk; expires=Tue, 01-Jan-2036 00:00:01 GMT;ubid-acbuk=252-9896577-7194124; path=/; domain=.amazon.co.uk; expires=Tue, 01-Jan-2036 00:00:01 GMT;
+Content-Type:image/gif;

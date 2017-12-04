@@ -1,0 +1,2 @@
+// Enhance your calm
+BOOMR.session.domain="telegraph.co.uk";BOOMR.session.start=+(new Date)-99999;BOOMR.plugins.LOGN.init({rate_limited:true});

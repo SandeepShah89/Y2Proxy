@@ -1,0 +1,12 @@
+Keep-Alive:timeout=2, max=93;
+Server:Apache/2.2.22 (Debian);
+Access-Control-Allow-Origin:*;
+Connection:Keep-Alive;
+Last-Modified:Wed, 23 Nov 2016 11:28:41 GMT;
+Date:Thu, 24 Nov 2016 13:37:20 GMT;
+X-Frame-Options:SAMEORIGIN;
+Accept-Ranges:bytes;
+ETag:"a15f5-8826-541f630de0973";
+Content-Length:34854;
+Age:994;
+Content-Type:text/css;

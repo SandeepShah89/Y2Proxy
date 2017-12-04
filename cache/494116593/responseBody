@@ -1,0 +1,116 @@
+/*
+	my attempt at a non intrusive roll over function. 
+	get any image in the navigation. Then when 
+	mouseover change the src to imageName-over.
+*/
+
+
+/*
+	to add more load events place them here
+*/
+addEvent(window, "load", navRollOver);
+addEvent(window, "load", fontSizer);
+addEvent(window, "load", setFontSize);
+function navRollOver() {
+
+
+  	if (!document.getElementsByTagName) return false;
+	if (!document.images) return false;
+	
+	function createURI(e)
+		{
+			var mypath=e.split('/');
+			var fileName=mypath.pop();       	
+			var newFile=/\./;
+			
+			var newURI=fileName.replace(newFile,'-over.');
+			newURI=mypath.join('/')+'/'+newURI;
+			return newURI;
+		}
+
+  var overs = document.getElementById("nav");
+    if(overs != null){
+        overs.getElementsByTagName('img');
+
+      var classname= /active/i;
+
+      for (var i=0; i < overs.length; i++) {
+
+        if (!(overs[i].className.match(classname)))   {
+
+                overs[i].onmouseover = function() {
+                var newURI=createURI(this.src);
+                this.src=newURI;
+            }
+
+            overs[i].onmouseout=function()	{
+                var oldURI=this.src;
+                var mypath=oldURI.split('/');
+                var fileName=mypath.pop();	
+                //make sure we're not already in the over state (for ie)
+
+
+                var overName=/-over\./i; 
+
+                if(fileName.match(overName))  {
+                        var newURI=fileName.replace(overName,'.');
+                    }
+                    else
+                    {
+                        var newURI=fileName;
+                    }
+
+                newURI=mypath.join('/')+'/'+newURI;
+                this.src=newURI
+
+            }
+            //preload over images
+
+                    var newURI=createURI(overs[i].src);
+                    var fileName=new Image();
+                    fileName.src=newURI;
+
+                }
+
+        }
+    }
+      
+}
+/*
+	thank you dean edwards http://dean.edwards.name
+*/
+if (![].pop) Array.prototype.pop = function() {
+                
+				var $item = this[this.length - 1];
+
+                this.length--;
+
+                return $item;
+
+        };
+		
+		
+		
+		
+		
+
+/*              Utility functions                    */
+
+function addEvent(obj, evType, fn){
+  /* adds an eventListener for browsers which support it
+     Written by Scott Andrew: nice one, Scott */
+  if (obj.addEventListener){
+    obj.addEventListener(evType, fn, false);
+    return true;
+  } else if (obj.attachEvent){
+	var r = obj.attachEvent("on"+evType, fn);
+    return r;
+  } else {
+	return false;
+  }
+}
+
+
+
+
+

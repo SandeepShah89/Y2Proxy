@@ -1,0 +1,13 @@
+Server:AmazonS3;
+Connection:close;
+Last-Modified:Mon, 17 Oct 2016 10:45:14 GMT;
+x-amz-version-id:mX6FS7oWgiT0RJrH1YfdDFLAzm_5XWOI;
+Date:Thu, 24 Nov 2016 14:50:53 GMT;
+Accept-Ranges:bytes;
+Cache-Control:max-age=31536000, max-age=31536000;
+ETag:"a31ee69e9a6bf48bb2c30431aa697aef";
+Expires:Tue, 17 Oct 2017 11:19:31 GMT;
+x-amz-request-id:0DB1DD569BFEBC85;
+Content-Length:61260;
+x-amz-id-2:M36Wh9jurQrkGHnv4QJQ1Li+a8Kubsco6P4vW1+4V+sVDnYrDH6Ih3UArFScj981JCmPkf7Bh24=;
+Content-Type:image/png;

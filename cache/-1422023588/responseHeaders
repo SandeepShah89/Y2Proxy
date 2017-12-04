@@ -1,0 +1,10 @@
+Cache-Control:max-age=300, no-transform, public;
+ETag:W/"8e97-vvB0V8MgYi8avn14XjWCRw";
+X-Content-Type-Options:nosniff;
+Connection:keep-alive;
+Vary:Accept-Encoding;
+Content-Length:36503;
+X-Proxy-Cache:HIT;
+Date:Thu, 24 Nov 2016 09:36:15 GMT;
+X-Powered-By:Express;
+Content-Type:text/javascript; charset=utf-8;

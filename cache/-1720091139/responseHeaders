@@ -1,0 +1,14 @@
+Server:Akamai Image Manager;
+X-IM2G-Akamai-Auth-Data:salt=956206981304027623 parse=1 adapted=1;
+Connection:close;
+X-IM-LunaToken:www_telegraph_co_uk_pm-5353407;
+Last-Modified:Wed, 26 Oct 2016 17:48:15 UTC;
+Date:Thu, 24 Nov 2016 13:37:20 GMT;
+X-IM2G-Akamai-Auth-Sign:BIJDS9xxIAtFhWY7vDcqctBf6cepjmFq91xjP0BXmDs=;
+Cache-Control:max-age=43200;
+X-IM-Encoding-Quality:60;
+Vary:Accept-Encoding;
+Content-Length:665;
+X-IM-Original-Width:32;
+X-IM-Original-Size:4561;
+Content-Type:image/jp2;

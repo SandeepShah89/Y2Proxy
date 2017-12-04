@@ -1,0 +1,16 @@
+#nav,
+.tools,
+#divisions,
+#section-nav,
+#footer,
+#search-form,
+#businessTabs
+{
+	display: none
+}
+
+#box a
+{
+	color: black;
+	text-decoration: none;
+}

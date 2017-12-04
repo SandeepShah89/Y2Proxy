@@ -1,0 +1,16 @@
+Server:AmazonS3;
+access-control-allow-headers:*;
+Connection:close;
+Last-Modified:Tue, 22 Nov 2016 16:47:11 GMT;
+access-control-allow-methods:HEAD,GET;
+Date:Thu, 24 Nov 2016 13:35:59 GMT;
+access-control-allow-origin:*;
+Accept-Ranges:bytes;
+access-control-allow-credentials:false;
+access-control-max-age:300;
+Cache-Control:public, max-age=31622400;
+ETag:"c5c38c6520d1dc9bd971dd19bd8594b8";
+x-amz-request-id:8EEB078151E31E29;
+Content-Length:1175;
+x-amz-id-2:W2DCt811oO8LZdHXvk1LfDGpzSv7ddmu/zKi7yUlJNbQKAaDtz86qcS6Vqw50c/pGF3zk7g3rMg=;
+Content-Type:image/svg+xml;

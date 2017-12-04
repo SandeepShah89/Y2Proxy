@@ -1,0 +1,2 @@
+@import url(/common/css/global/global_structure.css);
+@import url(print-adjust.css);

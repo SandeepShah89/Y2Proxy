@@ -1,0 +1,355 @@
+
+.pagination
+{
+  margin-top: 20px;
+  padding-top:20px;
+	width:470px;
+	margin-bottom:40px;
+	padding-bottom:20px;	
+	
+}
+.paginationBorderTop {
+  border-top: 1px solid #B7B196;
+  
+  padding: 5px 0;
+}
+
+.paginationBorder {
+border-bottom:1px solid #E5E9F1;
+margin-bottom:20px;
+padding-bottom:10px;
+}
+
+.printable {
+width:470px;
+margin-top:-10px;
+
+}
+
+.printable a{
+  float:right; 
+   
+  cursor:pointer;
+}
+
+.printBox{
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left:30%;
+  margin-top:-100px;
+}
+
+.none{
+  display:none;
+}
+
+.centreNav{
+
+}
+
+.centre{
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.buttonicon{
+margin-top:0px;
+height: 40px;   
+
+
+}
+
+.rightButton
+{
+float:right;
+}
+  
+.lightbox {
+  padding-top:100px;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:#000;
+  filter:alpha(opacity=80);
+  opacity:0.8;
+}
+
+.lightbox_table {
+  width:100%;
+  height:100%;
+}
+
+.lightbox_table_cell {
+  vertical-align:middle;
+}
+
+.Lightbuttondiv{
+  position:absolute;
+  left:0px;
+  top:0px;
+  margin-top:200px;
+  padding-left:320px;
+}
+
+.submitButtonOverlay{
+  background-color:#626242; 
+  height:30px;
+  width:180px;
+}
+
+.overlayButton{
+  background-color:orange;
+  height:30px;
+  width:150px;
+  text-decoration:none;
+}
+
+.guideTitle {
+  color:#002776;
+  margin-top:10px !important;
+  padding:0 !important;
+}
+
+
+.guideDescp{
+  padding-left:6px;
+}
+.buttons-left{
+  height:40px;  
+  margin-top:0px;
+}
+
+.headListLeft{
+  float:left;
+  width:45%;
+  padding-top:3px;
+  padding-bottom:2px;
+}
+
+
+.navColor
+{
+color:#808080 !important;
+text-decoration:none;
+
+}
+
+.buttonSerialColor{
+  color:#663399;
+}
+
+.stepImg{
+cursor:pointer;
+}
+
+.headListRight{
+margin-left: 50%;
+width:45%;
+padding-top:3px;
+  padding-bottom:2px;
+  
+}
+
+.navigationHead:hover{
+  text-decoration:none;
+}
+ a span.stepButtonImgleft:hover{
+  text-decoration:none;
+ }
+.stepButtonImgleft{
+  text-decoration:none !important;
+  padding-left:7px;
+  margin-top:4px;
+  margin-bottom:5px;
+  padding-top:8px;
+  padding-right:5px;
+  padding-bottom:8px;
+  background:url("/common/images/step-numbers.png");
+}
+
+.stepButtonImgright, .stepButtonImgright:hover{
+  text-decoration:none;  
+  margin-top:4px;
+  margin-bottom:5px;  
+  background:url("/common/images/step-numbers.png"); 
+  padding:7px 10px 5px 10px;
+  cursor:pointer;
+}
+
+#content #Pagination_nav a:hover
+{
+text-decoration:none !important;
+}
+
+.steptitle:hover{
+  text-decoration:underline;
+  cursor:pointer;
+}
+.steptitle{
+    
+    padding-left: 35px;
+    padding-bottom:5px;
+    margin-top:-21px;
+}
+
+.buttonDisable{
+filter:Alpha(Opacity=50);
+opacity:0.5;
+pointer-events:none;
+}
+
+/*---------------------------------
+ Overlay BUTTONS
+---------------------------------*/
+#overlayContainer .CloseBtn
+{
+    padding: 0;
+    right: 2.3em;
+    top: 10px;
+     height: 18px;
+    margin: -10px 0 0;
+    width: 19px;
+}
+
+#overlayContainer .CloseIcon
+{
+  float:right; 
+  background-image: url("/common/images/icons/close.gif") !important;
+  display: block;
+  margin: 1px;
+  height: 38px;
+  width: 38px;
+  background-position: 15px 9px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-indent: -99999px;
+  cursor:pointer;
+}
+
+#overlayBox
+{
+  background-color: #000000;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5; 
+  filter:alpha(opacity=50);
+  position: fixed; 
+  right: 0;   
+  top: 0;   
+}
+ 
+#overlay {
+	visibility: hidden;
+	position: fixed;
+	height:100%;
+	width:100%;
+	left:0;
+	top: 0px;
+	z-index:1001;
+}
+
+#overlay #overlayContainer {
+	margin:170px auto;	
+	text-align: center;
+	background:white;
+	border:1px solid #c2c2c2;
+	border-radius:8px;
+	width:400px;
+}
+
+#overlay #overlayContainer .overlayContentContainer
+{
+ padding:40px 8px;
+}
+
+#overlay #overlayContainer .overlayContentContainer h3
+{
+ color:#808080;
+}
+
+.gbutton {
+	padding: 0;
+	margin: 5px 5px 5px 0;
+	overflow: hidden;	
+}
+
+.sidebyside .gbutton {
+	float: left;
+}
+
+.gbutton .button-left {
+	float: left;
+	margin: 0;
+	padding: 0;
+	background: url(/common/images/buttons/css/button-prim-borders.gif) no-repeat top left;
+	height: 21px;
+	width: 6px;
+	cursor: pointer;
+}
+.gbutton-secondary .button-left, .gbutton-existing .button-left {
+	background: url(/common/images/buttons/css/button-sec-borders.gif) no-repeat top left;
+}
+
+.gbutton .button-middle {
+	float: left;
+	margin: 0;
+	padding: 0;
+	background: url(/common/images/buttons/css/button-prim-middle.gif) repeat-x top left;
+	height: 21px;
+	cursor: pointer;	
+}
+
+.gbutton-secondary .button-middle, .gbutton-existing .button-middle {
+	background: url(/common/images/buttons/css/button-sec-middle.gif) repeat-x top left;
+}
+
+.gbutton .button-middle a {
+	display: block;
+	color: #FFFFFF;
+	margin: 2px;
+	padding: 3px;
+	font-size: 0.85em;
+	line-height: 0.85em;
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.gbutton-secondary .button-middle a, .gbutton-existing .button-middle a {
+	color: #663399;
+}
+
+.gbutton .button-middle a:hover {
+	text-decoration: none;
+}
+
+.gbutton .button-right {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	background: url(/common/images/buttons/css/button-prim-borders.gif) no-repeat top right;
+	height: 21px;
+	width: 6px;
+	cursor: pointer;
+}
+
+.gbutton-secondary .button-right, .gbutton-existing .button-right {
+	background: url(/common/images/buttons/css/button-sec-borders.gif) no-repeat top right;
+}
+
+.hidePage
+{
+filter:alpha(opacity=20);
+opacity:0.2;
+}
+.leftButton
+{float:left;}
+
+#content .centreNav a 
+{
+text-decoration:  none !important;
+}

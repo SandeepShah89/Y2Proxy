@@ -1,0 +1,363 @@
+.clearfix {
+	zoom: 1
+}
+.clearfix:before {
+	content: '';
+	display: block
+}
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both
+}
+.before-fallback {
+	*zoom: expression( this.runtimeStyle.zoom='1', this.appendChild( document.createElement('span') ).className='before')
+}
+.after-fallback {
+	*zoom: expression( this.runtimeStyle.zoom='1', this.appendChild( document.createElement('span') ).className='after')
+}
+.sp-pat-139-insurance-calculator-responsive, .sp-pat-139-insurance-calculator {
+	padding: 20px
+}
+.sp-pat-139-insurance-calculator-responsive p, .sp-pat-139-insurance-calculator p {
+	margin-bottom: 18px
+}
+.sp-pat-139-insurance-calculator-responsive .step-info p, .sp-pat-139-insurance-calculator .step-info p {
+	margin-bottom: 18px
+}
+.sp-pat-139-insurance-calculator-responsive .step-info .icomoon, .sp-pat-139-insurance-calculator .step-info .icomoon {
+	font-size: 50px;
+	margin-bottom: 20px
+}
+.sp-pat-139-insurance-calculator-responsive .form-container, .sp-pat-139-insurance-calculator .form-container {
+	visibility: hidden;
+	position: relative;
+	zoom: 1;
+	background-color: #fff;
+	overflow: hidden
+}
+.sp-pat-139-insurance-calculator-responsive .form-container:before, .sp-pat-139-insurance-calculator .form-container:before {
+	content: '';
+	display: block
+}
+.sp-pat-139-insurance-calculator-responsive .form-container:after, .sp-pat-139-insurance-calculator .form-container:after {
+	content: '';
+	display: table;
+	clear: both
+}
+.sp-pat-139-insurance-calculator-responsive .form-container hr, .sp-pat-139-insurance-calculator .form-container hr {
+	margin: 0 20px 16px 20px
+}
+.sp-pat-139-insurance-calculator-responsive fieldset, .sp-pat-139-insurance-calculator fieldset {
+	position: relative;
+	width: 30000px;
+	overflow: hidden
+}
+.sp-pat-139-insurance-calculator-responsive .select-wrapper, .sp-pat-139-insurance-calculator .select-wrapper {
+	margin: auto;
+	width: 80%
+}
+.sp-pat-139-insurance-calculator-responsive .form-group, .sp-pat-139-insurance-calculator .form-group {
+	float: left;
+	padding: 10px 20px 8px 20px;
+	margin-bottom: 8px
+}
+.sp-pat-139-insurance-calculator-responsive .form-group .info, .sp-pat-139-insurance-calculator .form-group .info {
+	font-size: 1.6em;
+	margin: 0 0 16px 0
+}
+.sp-pat-139-insurance-calculator-responsive .form-group .button, .sp-pat-139-insurance-calculator .form-group .button {
+	width: 100%;
+	margin-right: 0
+}
+.sp-pat-139-insurance-calculator-responsive .form-group.step-input .qualifier, .sp-pat-139-insurance-calculator .form-group.step-input .qualifier {
+	position: absolute
+}
+.sp-pat-139-insurance-calculator-responsive .form-group.step-result.final-step .step-heading .qualifier-group, .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading .qualifier-group {
+	margin-bottom: 0
+}
+.sp-pat-139-insurance-calculator-responsive .form-group.step-result.final-step .step-heading p, .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading p {
+	margin-bottom: 0
+}
+.sp-pat-139-insurance-calculator-responsive .form-group.step-result.final-step .step-heading .negative-amount-message, .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading .negative-amount-message {
+	margin-bottom: 18px
+}
+.sp-pat-139-insurance-calculator-responsive .qualifier-group, .sp-pat-139-insurance-calculator .qualifier-group {
+	position: relative;
+	zoom: 1;
+	margin-bottom: 12px
+}
+.sp-pat-139-insurance-calculator-responsive .qualifier-group:before, .sp-pat-139-insurance-calculator .qualifier-group:before {
+	content: '';
+	display: block
+}
+.sp-pat-139-insurance-calculator-responsive .qualifier-group:after, .sp-pat-139-insurance-calculator .qualifier-group:after {
+	content: '';
+	display: table;
+	clear: both
+}
+.sp-pat-139-insurance-calculator-responsive .qualifier-group span, .sp-pat-139-insurance-calculator .qualifier-group span {
+	font-size: 1.8em
+}
+.sp-pat-139-insurance-calculator-responsive .qualifier-group input, .sp-pat-139-insurance-calculator .qualifier-group input {
+	width: 80%
+}
+.sp-pat-139-insurance-calculator-responsive .form-control, .sp-pat-139-insurance-calculator .form-control {
+	border-radius: 0;
+	margin: auto;
+	width: 90%
+}
+.sp-pat-139-insurance-calculator-responsive .form-control.minor, .sp-pat-139-insurance-calculator .form-control.minor {
+	margin: auto;
+	width: 40%
+}
+.sp-pat-139-insurance-calculator-responsive .neg .end-journey-hand-off, .sp-pat-139-insurance-calculator .neg .end-journey-hand-off {
+	margin-top: 20px
+}
+.sp-pat-139-insurance-calculator-responsive .loan-calc-next, .sp-pat-139-insurance-calculator .loan-calc-next, .sp-pat-139-insurance-calculator-responsive .loan-calc-previous, .sp-pat-139-insurance-calculator .loan-calc-previous, .sp-pat-139-insurance-calculator-responsive .loan-calc-restart, .sp-pat-139-insurance-calculator .loan-calc-restart {
+	cursor: pointer
+}
+.sp-pat-139-insurance-calculator-responsive .loan-calc-next, .sp-pat-139-insurance-calculator .loan-calc-next, .sp-pat-139-insurance-calculator-responsive .loan-calc-restart, .sp-pat-139-insurance-calculator .loan-calc-restart {
+	float: right;
+	*zoom: expression( this.runtimeStyle.zoom='1', this.appendChild( document.createElement('span') ).className='after')
+}
+.sp-pat-139-insurance-calculator-responsive .loan-calc-previous, .sp-pat-139-insurance-calculator .loan-calc-previous {
+	float: left;
+	display: none
+}
+.sp-pat-139-insurance-calculator-responsive .pagination, .sp-pat-139-insurance-calculator .pagination {
+	padding: 0 15px 0 15px
+}
+.sp-pat-139-insurance-calculator-responsive .pagination a, .sp-pat-139-insurance-calculator .pagination a {
+	border: none;
+	margin-bottom: 20px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none
+}
+.no-js .sp-pat-139-insurance-calculator-responsive form, .no-js .sp-pat-139-insurance-calculator form {
+	visibility: hidden
+}
+#content .sp-pat-139-insurance-calculator, .sp-pat-139-insurance-calculator {
+	max-width: 250px;
+	padding: 5px;
+	border: 8px solid #eff1f5;
+	border-radius: 10px;
+	background-color: #eff1f5
+}
+#content .sp-pat-139-insurance-calculator *, .sp-pat-139-insurance-calculator * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+#content .sp-pat-139-insurance-calculator .calc-logo, .sp-pat-139-insurance-calculator .calc-logo {
+	margin-left: 41%
+}
+#content .sp-pat-139-insurance-calculator .insurance-calc-logo, .sp-pat-139-insurance-calculator .insurance-calc-logo {
+	margin-left: 40%
+}
+#content .sp-pat-139-insurance-calculator p, .sp-pat-139-insurance-calculator p {
+	line-height: 1.3em
+}
+#content .sp-pat-139-insurance-calculator .step-info h3, .sp-pat-139-insurance-calculator .step-info h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin: 4px 6px 4px 4px;
+	padding: 0;
+	color: #002776;
+	font-weight: normal
+}
+#content .sp-pat-139-insurance-calculator .step-info p, .sp-pat-139-insurance-calculator .step-info p {
+	margin: 10px 5px;
+	padding: 0
+}
+#content .sp-pat-139-insurance-calculator .form-container, .sp-pat-139-insurance-calculator .form-container {
+	zoom: 1;
+	margin: 18px 8px
+}
+#content .sp-pat-139-insurance-calculator .form-container:before, .sp-pat-139-insurance-calculator .form-container:before {
+	content: '';
+	display: block
+}
+#content .sp-pat-139-insurance-calculator .form-container:after, .sp-pat-139-insurance-calculator .form-container:after {
+	content: '';
+	display: table;
+	clear: both
+}
+#content .sp-pat-139-insurance-calculator .form-container .select-wrapper select, .sp-pat-139-insurance-calculator .form-container .select-wrapper select {
+	height: 30px
+}
+#content .sp-pat-139-insurance-calculator .form-container .step-heading, .sp-pat-139-insurance-calculator .form-container .step-heading {
+	margin-top: 15px
+}
+#content .sp-pat-139-insurance-calculator .form-container .step-heading h4, .sp-pat-139-insurance-calculator .form-container .step-heading h4 {
+	text-align: center;
+	font-weight: bold;
+	margin: 3px 0 10px 0;
+	padding: 0;
+	color: #002776
+}
+#content .sp-pat-139-insurance-calculator .form-container .step-heading h4.qualifier-group, .sp-pat-139-insurance-calculator .form-container .step-heading h4.qualifier-group {
+	font-size: .8em;
+	line-height: 1em
+}
+#content .sp-pat-139-insurance-calculator .step-count, .sp-pat-139-insurance-calculator .step-count {
+	margin: 16px 0 0 0;
+	font-weight: bold;
+	text-align: center
+}
+#content .sp-pat-139-insurance-calculator .form-group, .sp-pat-139-insurance-calculator .form-group {
+	display: block;
+	padding: 0 12px 8px 12px
+}
+#content .sp-pat-139-insurance-calculator .form-group label, .sp-pat-139-insurance-calculator .form-group label {
+	line-height: 1.3em
+}
+#content .sp-pat-139-insurance-calculator .form-group.step-input .qualifier, .sp-pat-139-insurance-calculator .form-group.step-input .qualifier {
+	position: relative;
+	float: left
+}
+#content .sp-pat-139-insurance-calculator .form-group.step-result .qualifier-group .qualifier, .sp-pat-139-insurance-calculator .form-group.step-result .qualifier-group .qualifier {
+	display: inline
+}
+#content .sp-pat-139-insurance-calculator .form-group.step-result .qualifier-group.coloured, .sp-pat-139-insurance-calculator .form-group.step-result .qualifier-group.coloured {
+	color: #002276
+}
+#content .sp-pat-139-insurance-calculator .form-group.step-result .qualifier-group.coloured span, .sp-pat-139-insurance-calculator .form-group.step-result .qualifier-group.coloured span {
+	color: #002276
+}
+#content .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading, .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading {
+	margin-top: 15px
+}
+#content .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading .qualifier-group, .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading .qualifier-group {
+	text-align: left
+}
+#content .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading .qualifier-group span, .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading .qualifier-group span {
+	color: #505050
+}
+#content .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading .qualifier-group.coloured span, .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading .qualifier-group.coloured span {
+	color: #002276
+}
+#content .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading .replay-total-group p, .sp-pat-139-insurance-calculator .form-group.step-result.final-step .step-heading .replay-total-group p {
+	margin-bottom: 18px
+}
+#content .sp-pat-139-insurance-calculator .qualifier-group, .sp-pat-139-insurance-calculator .qualifier-group {
+	zoom: 1;
+	margin: 10px 0
+}
+#content .sp-pat-139-insurance-calculator .qualifier-group:before, .sp-pat-139-insurance-calculator .qualifier-group:before {
+	content: '';
+	display: block
+}
+#content .sp-pat-139-insurance-calculator .qualifier-group:after, .sp-pat-139-insurance-calculator .qualifier-group:after {
+	content: '';
+	display: table;
+	clear: both
+}
+#content .sp-pat-139-insurance-calculator .qualifier-group .qualifier, .sp-pat-139-insurance-calculator .qualifier-group .qualifier {
+	margin: 6px 6px 6px 0;
+	display: block;
+	font-size: 1.4em
+}
+#content .sp-pat-139-insurance-calculator .qualifier-group span, .sp-pat-139-insurance-calculator .qualifier-group span {
+	font-size: 1.6em;
+	margin: 0
+}
+#content .sp-pat-139-insurance-calculator .qualifier-group input, .sp-pat-139-insurance-calculator .qualifier-group input {
+	height: 32px;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	line-height: 32px \9;
+	padding-left: 5px
+}
+#content .sp-pat-139-insurance-calculator .form-control, .sp-pat-139-insurance-calculator .form-control {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #a9a9a9
+}
+#content .sp-pat-139-insurance-calculator .replay-operator, .sp-pat-139-insurance-calculator .replay-operator {
+	margin-bottom: 10px;
+	display: block;
+	font-size: 1.5em
+}
+#content .sp-pat-139-insurance-calculator .loan-calc-next, .sp-pat-139-insurance-calculator .loan-calc-next, #content .sp-pat-139-insurance-calculator .loan-calc-previous, .sp-pat-139-insurance-calculator .loan-calc-previous {
+	line-height: 16px;
+	padding-top: 1px
+}
+#content .sp-pat-139-insurance-calculator .loan-calc-next, .sp-pat-139-insurance-calculator .loan-calc-next {
+	background: url('../images/ops/arrow-next.gif') no-repeat top 2px right 0;
+	text-align: right;
+	padding-right: 20px
+}
+#content .sp-pat-139-insurance-calculator .loan-calc-previous, .sp-pat-139-insurance-calculator .loan-calc-previous {
+	background: url('../images/ops/arrow-back.gif') no-repeat top 2px left 0;
+	text-align: left;
+	padding-left: 20px
+}
+#content .sp-pat-139-insurance-calculator .button-primary, .sp-pat-139-insurance-calculator .button-primary {
+	background-color: #008762;
+	display: inline-block;
+	padding: 5px 10px 5px 10px;
+	line-height: 1;
+	color: #fff;
+	position: relative;
+	text-align: center;
+	text-decoration: none
+}
+#content .sp-pat-139-insurance-calculator .pagination, .sp-pat-139-insurance-calculator .pagination {
+	margin-top: 0;
+	padding: 0 12px 0 12px;
+	width: auto
+}
+#content .sp-pat-139-insurance-calculator .pagination a, .sp-pat-139-insurance-calculator .pagination a {
+	color: #505050;
+	font-size: 13px;
+	font-weight: bold
+}
+#content .sp-pat-139-insurance-calculator .pagination a img, .sp-pat-139-insurance-calculator .pagination a img {
+	display: inline
+}
+#content .sp-pat-139-insurance-calculator .negative-amount-message, .sp-pat-139-insurance-calculator .negative-amount-message, #content .sp-pat-139-insurance-calculator .limit-amount-message, .sp-pat-139-insurance-calculator .limit-amount-message, #content .sp-pat-139-insurance-calculator .negative-and-limit-amount-message, .sp-pat-139-insurance-calculator .negative-and-limit-amount-message {
+	font-weight: bold
+}
+.no-js .sp-pat-139-insurance-calculator form {
+	visibility: hidden
+}
+#myChatLinkContainer.yui-skin-sam {
+  position: fixed;
+  right: 20px;
+  bottom: 20px; 
+  width: 315px;}
+
+#rn_Dialog_0_c.yui-panel-container {
+  visibility: hidden !important; }
+  
+#rn_Dialog_0.rn_Dialog {
+  width: 315px; }
+
+#rn_DialogButton_rn_Dialog_0_0.yui-button  {
+  width: 265px; }
+  
+#rn_DialogButton_rn_Dialog_0_1.yui-button  {
+  width: 16px; }
+
+#rn_DialogButton_rn_Dialog_0_0-button {
+  visibility: visible;
+  background: url(../images/start-chat-bos2.png) no-repeat; 
+  width: 277px;
+  height: 54px; 
+  text-indent: -9000px; 
+  outline: none; }
+	    
+#rn_DialogButton_rn_Dialog_0_1-button {
+  visibility: visible;
+  background: url(../images/close.gif) no-repeat; 
+  height: 54px; 
+  min-width: 16px; 
+  text-indent: -9000px; 
+  outline: none; 
+}

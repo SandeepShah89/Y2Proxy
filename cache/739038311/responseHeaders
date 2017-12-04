@@ -1,0 +1,14 @@
+Server:Apache;
+Access-Control-Allow-Origin:http://www.bbc.co.uk;
+Connection:keep-alive;
+X-PAL-Host:pal038.back.live.cwwtf.local:80;
+Date:Thu, 24 Nov 2016 02:47:01 GMT;
+Cache-Control:private, max-age=0, must-revalidate;
+X-Cache-Action:HIT;
+Etag:"dda9a264d0398e6b64b6c05098d44547";
+Access-Control-Allow-Credentials:true;
+X-Cache-Age:321;
+Vary:X-CDN,Origin;
+Content-Length:1064;
+X-Cache-Hits:481;
+Content-Type:application/javascript;

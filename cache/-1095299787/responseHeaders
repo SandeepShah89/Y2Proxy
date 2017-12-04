@@ -1,0 +1,10 @@
+Server:Apache;
+Cache-Control:private, max-age=1800, s-max-age=1800;
+X-Served-By:beacon-a225-dub.krxd.net;
+Connection:keep-alive;
+Set-Cookie:ServedBy=beacon-a225-dub; path=/; domain=.krxd.net; expires=Wed, 24-May-2017 02:57:14 GMT;
+Content-Length:67;
+P3P:policyref="http://cdn.krxd.net/kruxcontent/p3p.xml", CP="NON DSP COR NID OUR DEL SAM OTR UNR COM NAV INT DEM CNT STA PRE LOC OTC";
+Date:Thu, 24 Nov 2016 13:37:14 GMT;
+X-Request-Time:D=151 t=1479994634261034;
+Content-Type:text/javascript;

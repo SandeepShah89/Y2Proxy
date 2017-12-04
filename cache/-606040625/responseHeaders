@@ -1,0 +1,10 @@
+Transfer-Encoding:chunked;
+X-Frame-Options:SAMEORIGIN;
+Cache-Control:public, max-age=31530915;
+Server:nginx;
+ETag:W/"2100571-13459-5420aed7ba525";
+Connection:Transfer-Encoding;close;
+Vary:Accept-Encoding;
+Last-Modified:Thu, 24 Nov 2016 12:13:04 GMT;
+Date:Thu, 24 Nov 2016 13:37:13 GMT;
+Content-Type:image/png;

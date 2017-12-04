@@ -1,0 +1,123 @@
+<!--		function OpenChildWindow(sURL, sLinkName, sWarn, bLocationBox, sAppRoot, intResize, intScrollbars, intToolbar, intMenubar, intAddress, intStatus, intHorSize, intVertSize) 		{
+			var bContinue = true;
+			if (sWarn != "")
+			{
+				bContinue = confirm (sWarn);
+			}
+
+			if (bContinue)
+			{
+				var browserVer = navigator.appVersion;
+				var browserName = navigator.appName;
+				var features = "";
+				features += "resizable="+intResize;
+				features += ",scrollbars="+intScrollbars;
+				features += ",toolbar="+intToolbar;
+				features += ",menubar="+intMenubar;
+				features += ",width="+intHorSize;
+				features += ",height="+intVertSize;
+				features += ",location="+intAddress;
+				features += ",status="+intStatus;
+
+				var newWin = window.open(sURL, sLinkName, features);
+
+				if ((browserVer.indexOf("MSIE 5.0") != -1) || (browserName == "Netscape"))
+				{
+					newWin.focus();
+				}
+			}
+		}function check_frames()
+{
+	for(var i = 0; i < window.frames.length; i++)
+	{     
+		try
+		{
+			window.frames[i].location.href;
+		}     
+		catch(err)     
+		{
+			window.location = '/home/home.asp?frame=true';
+			return;
+		}
+	}
+}
+var temp = { v2:false, v3:false, v4:false, v5:false, v6:false, v7:false, v8:false };
+function FlashDetectorFactory()
+{
+	var versions = { v2:false, v3:false, v4:false, v5:false, v6:false, v7:false, v8:false };
+	var n = navigator;
+	var closure =
+	{
+		installed : function()
+		{
+			var ok = false;
+			for (v in versions) { ok = ok || versions[v]; }
+			return(ok);
+		},
+		atLeast : function(want)
+		{
+			var ok = false;
+			for (v in versions) { ok = ok || ((((v.search(/(\d+(\.\d+)?)/) != -1) ? RegExp.$1 : 0) >= want) && versions[v]); }
+			return(ok);
+		},
+		renderMovie : function(args)
+		{
+			String.prototype.interpolate=function(){var s=this;while(s.search(/\$\{([^\}]+)\}/)!=-1){s=s.replace(/\$\{([^\}]+)\}/, eval(RegExp.$1));}return(s);} 
+			document.writeln(("<object classid='CLSID:D27CDB6E-AE6D-11CF-96B8-444553540000'"+
+			" codebase='https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0'"+
+			" id='${args.name}' width='${args.width}' height='${args.height}' align='middle' alt='${args.alt||''}'>"+
+			"  <param name='allowScriptAccess' value='sameDomain'/>"+
+			"  <param name='movie' value='${args.path}'/>"+
+			"  <param name='play' value='${args.play||'true'}'/>"+
+			"  <param name='quality' value='high'/>"+
+			"  <param name='loop' value='${args.loop||'false'}'/>"+
+			"  <param name='longdesc' value='${args.longdesc||''}'/>"+
+			"<embed src='${args.path}' quality='high'"+
+			" swLiveConnect='false' scale='default' width='${args.width||100}' height='${args.height||100}'"+
+			" loop='${args.loop||'false'}' play='${args.play||'true'}' title='${args.alt||''}' name='${args.name}' longdec='${args.longdesc||''}' align='middle'"+
+			" allowScriptAccess='sameDomain' type='application/x-shockwave-flash'"+
+			" pluginspage='http://www.macromedia.com/go/getflashplayer' />"+
+			"</object>").interpolate());
+		},
+		renderAlternative : function(args)
+		{
+			String.prototype.interpolate=function(){var s=this;while(s.search(/\$\{([^\}]+)\}/)!=-1){s=s.replace(/\$\{([^\}]+)\}/, eval(RegExp.$1));}return(s);} 
+						
+			if(args.target == "standard")
+			{
+				document.writeln("<a href='${args.dest}' target='_blank' onMouseOver=\"window.status='${args.status}'; return true;\" onMouseOut=\"window.status=''; return true;\" onFocus=\"window.status='${args.status}'; return true;\" onBlur=\"window.status=''; return true;\"><img class='${args.cssclass}' border=0 src='${args.path}' alt='${args.alt||''}' /></a>".interpolate());						
+			}
+			else if(args.target == "parent")
+			{
+				document.writeln("<a href='${args.dest}' target='_parent' onMouseOver=\"window.status='${args.status}'; return true;\" onMouseOut=\"window.status=''; return true;\" onFocus=\"window.status='${args.status}'; return true;\" onBlur=\"window.status=''; return true;\"><img class='${args.cssclass}' border=0 src='${args.path}' alt='${args.alt||''}' /></a>".interpolate());						
+			}
+			else if(args.target == "popup")
+			{																						
+				document.writeln("<a href='${args.dest}' target='_blank' onClick=\"OpenChildWindow('${args.dest}','newwindow','${args.warn}','false','/',${args.resize},${args.scrollbars},${args.toolbar},${args.menubar},0,0,${args.popupwidth},${args.popupheight}); return false;\" onMouseOver=\"window.status='${args.status}'; return true;\" onMouseOut=\"window.status=''; return true;\" onFocus=\"window.status='${args.status}'; return true;\" onBlur=\"window.status=''; return true;\"><img class='${args.cssclass}' border=0 src='${args.path}' alt='${args.alt||''}' /></a>".interpolate());						
+			}
+			else 
+			{
+				document.writeln("<img class='${args.cssclass}' border=0 src='${args.path}' alt='${args.alt||''}' />".interpolate());						
+			}			
+
+		}
+	};
+	if ((n.appVersion.indexOf("MSIE") != -1) && (n.appVersion.indexOf("Windows") != -1))
+	{
+		var w = document.writeln;
+		w('<SCR' + 'IPT LANGUAGE=VBScript\>');
+		w('on error resume next');
+		for (i=2;i<=8;i++) w('temp.v'+i+' = IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.'+i+'"))');
+		w('on error goto 0');
+		w('</SCR' + 'IPT\>');
+		versions = temp;
+	}
+	else if ((n.plugins) && (n.plugins["Shockwave Flash 2.0"] || n.plugins["Shockwave Flash"]))
+	{
+		var version = n.plugins["Shockwave Flash" + (n.plugins["Shockwave Flash 2.0"] ? " 2.0" : "")].description.search(/(\d+\.\d+)/) != -1 ? RegExp.$1 : 0;
+		versions["v"+version] = true;
+	}
+	return(closure);
+}		
+var FlashDetector = FlashDetectorFactory();
+// -->

@@ -1,0 +1,14 @@
+Transfer-Encoding:chunked;
+Keep-Alive:timeout=5, max=100;
+Server:Apache-Coyote/1.1;
+Access-Control-Allow-Origin:*;
+Connection:Keep-Alive;
+Pragma:no-cache;
+p3p:CP="NOI DSP COR NID ADM DEV PSA OUR IND UNI PUR COM NAV INT STA";
+Date:Thu, 24 Nov 2016 14:52:10 GMT;
+Via:1.1 ots.optimize.webtrends.com;
+Cache-Control:no-cache;
+Content-Encoding:deflate;
+Set-Cookie:JSESSIONID=1797C393D740681AC993A864BA43AF05; Path=/ots;
+Expires:Thu, 01 Jan 1970 00:00:00 GMT;
+Content-Type:text/javascript;charset=UTF-8;

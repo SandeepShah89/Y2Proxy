@@ -1,0 +1,17 @@
+Transfer-Encoding:chunked;
+Server:AmazonS3;
+Connection:Transfer-Encoding;close;
+Last-Modified:Thu, 24 Nov 2016 13:32:50 GMT;
+x-amz-version-id:tIbdYwrxs93i92JhX.HhSuH0q0Qu0.pK;
+Date:Thu, 24 Nov 2016 13:37:09 GMT;
+Cache-Control:max-age=126;
+ETag:"ccfd71c6c478adcc31978ad0f742f222";
+x-amz-meta-revision:13140;
+Timing-Allow-Origin:*;
+X-Amz-Cf-Id:U3VDV9dvVzAPveEhvdOxcCrquzPp4cg2v_s43IM6jwbXv7YDmWsYjw==;
+Set-Cookie:cdn=https%3a%2f%2fakamai%3adsd%40cdn.optimizely.com%2fjs%2f1425218314.js; path=/; domain=.optimizely.com;
+Vary:Accept-Encoding;
+X-Edge-O1-RID:abxksKOZUJAvvhDCpZKpzq6s0EcGZgZkQUjnLybNNUDyLDe-Htp-6g==;
+x-amz-request-id:D80E24CEC86A3662;
+x-amz-id-2:KQFOMRmOcEoDEZji07O8RjCleV/M18of+UdRsnBnHauK6ZFVjuR0/pcgCQeX0j128PbPN5WM/tI=;
+Content-Type:text/javascript;

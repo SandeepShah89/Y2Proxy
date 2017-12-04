@@ -1,0 +1,2 @@
+@import "../../common/css/global/global_structure.css";
+@import "../../common/css/site-bos-legacy.css";

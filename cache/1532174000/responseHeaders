@@ -1,0 +1,13 @@
+Server:Apache;
+Access-Control-Allow-Origin:://[http;
+Connection:keep-alive;
+X-PAL-Host:pal062.back.live.cwwtf.local:80;
+Date:Thu, 24 Nov 2016 09:36:15 GMT;
+Cache-Control:private, max-age=0, must-revalidate;
+X-Cache-Action:MISS;
+Etag:"667f79fe2f56537a82e62e34c135e328";
+Access-Control-Allow-Credentials:true;
+X-Cache-Age:0;
+Vary:X-CDN,Origin;
+Content-Length:1219;
+Content-Type:application/javascript;

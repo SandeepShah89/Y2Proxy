@@ -1,0 +1,33 @@
+function clearText(thisField){
+	if (thisField.defaultValue==thisField.value)
+	thisField.value = ""
+}
+
+
+
+function submitPage(){
+  var fieldName=document.getElementById("search-text");
+   
+  var fieldValue= (fieldName.value);
+  fieldValue= (fieldValue.toString()).replace(/^\s+|\s+$/g,"");
+  
+   if(fieldValue!="" && fieldValue !=fieldName.defaultValue)
+    return true;
+  else
+    return false;
+}
+
+function submitResultPage(){
+  var fieldName=document.getElementById("search-bar-text");
+  var fieldValue= (fieldName.value);
+  fieldValue= (fieldValue.toString()).replace(/^\s+|\s+$/g,"");
+
+  if(fieldValue !="")
+    return true;
+  else
+    return false;
+
+}
+
+
+
